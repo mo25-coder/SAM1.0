@@ -6,7 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 import json
 
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
-API_KEY = "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"
+API_KEY = "YOUR_API_KEY"
 
 def get_session_id(request):
     if "session_id" not in request.session:
