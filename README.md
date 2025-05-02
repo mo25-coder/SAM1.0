@@ -2,7 +2,7 @@
 
 ---
 
-```markdown
+
 # 🤖 AI Chat Web App
 
 An interactive web-based AI chat interface built with **Django** on the backend and **JavaScript** on the frontend. This application allows users to interact with an AI assistant through a sleek, modern UI.
