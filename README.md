@@ -37,13 +37,6 @@ An interactive web-based AI chat interface built with **Django** on the backend 
 
 ---
 
-## 📂 Project Structure
-
-```plaintext
-chatproject/ │ ├── chatapp/ │ ├── migrations/ │ ├── templates/chatapp/ │ │ └── index.html │ ├── static/ │ │ ├── css/style.css │ │ └── js/script.js │ ├── models.py │ ├── views.py │ └── urls.py │ ├── chatproject/ │ ├── settings.py │ └── urls.py │ ├── db.sqlite3 └── manage.py
-```
----
-
 ## 📦 Installation
 
 1. **Clone the repository**:
