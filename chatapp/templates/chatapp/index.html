@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Chat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome-free-6.7.2-web/css/all.css' %}">
+
+</head>
+<body>
+    <nav>
+        <h2>🤖 Welcome to AI Chat</h2>
+    </nav>
+    <div class="chat-box" id="chatContainer">
+        {% for msg in messages %}
+            <div class="message">
+                {% comment %} <div class="role">{{ msg.role.capitalize() }}</div> {% endcomment %}
+                <div class="role">{{ msg.role|capfirst }}</div>
+                <div class="content">{{ msg.content | safe }}</div>
+            </div>
+        {% endfor %}
+
+    </div>
+    <div class="chatFormBox">
+        <form id="chatForm" method="POST">
+            <textarea name="user_input" id="user_input" placeholder="Type your message here..."></textarea>
+            <button type="submit"><i class="fa-solid fa-arrow-up"></i></button>
+        </form>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

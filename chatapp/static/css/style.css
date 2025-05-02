@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #dbeafe);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 88vh;
+    padding: 40px 20px;
+    color: #1e293b;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 20px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.chat-box {
+    /* background: white; */
+    border-radius: 16px;
+    /* box-shadow: 0 10px 30px rgba(0,0,0,0.1); */
+    max-width: 800px;
+    /* min-height: 800px; */
+    width: 100%;
+    /* padding: 32px; */
+    /* padding-bottom: 120px; */
+    padding-top: 110px;
+    padding-bottom: 120px;
+    overflow-y: auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #1e3a8a;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+
+.message .role {
+    font-weight: 600;
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+
+.message .content {
+    font-size: 16px;
+    line-height: 1.6;
+    background: #f8fafc;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.chatFormBox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 10px 20px;
+    border-top: 1px solid #e2e8f0;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+    height: 82px;
+    width: 66vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: auto;
+}
+
+.input-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+textarea {
+    flex: 1;
+    height: 60px;
+    resize: none;
+    border-radius: 8px;
+    /* border: 1px solid #cbd5e1; */
+    /* padding: 10px; */
+    /* font-size: 18px; */
+    /* width: 76%; */
+    margin-left: 12%;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    width: 90%;
+    margin-left: -1%;
+}
+
+textarea:focus {
+    outline: none;
+    /* box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); */
+    border-radius: 8px;
+}
+
+button[type="submit"] {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: -30px;
+    margin-left: 15px;
+}
+
+button[type="submit"] i{
+    font-size: 26px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2563eb;
+}
+
+@media (max-width: 600px) {
+    .chat-box {
+        padding: 20px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+}
